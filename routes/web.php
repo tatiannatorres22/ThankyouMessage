@@ -21,5 +21,5 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 Route::post('/contact', function () {
-    return view('welcome');
+    return view('pages.content');
 });
