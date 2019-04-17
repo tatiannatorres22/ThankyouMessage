@@ -21,5 +21,9 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 Route::post('/contact', function () {
-    return view('pages.content');
+
+    $data = request()->all();
+    echo "Thank you ";
+    echo $data['name'];
+
 });
